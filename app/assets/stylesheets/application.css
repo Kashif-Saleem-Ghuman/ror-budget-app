@@ -28,8 +28,14 @@
       color: #fff !important;
     }
 
-    .btn {
+    .white {
       color: #fff;
+    }
+
+    .icon {
+      filter: invert(100%);
+      width: 30px;
+      height: 30px;
     }
   }
 }
@@ -45,6 +51,12 @@
   color: #fff !important;
 }
 
-.btn {
+.white {
   color: #fff;
+}
+
+.icon {
+  filter: invert(100%);
+  width: 30px;
+  height: 30px;
 }

@@ -7,7 +7,7 @@
       <ul class="d-flex align-items-center justify-content-between">
         <% if @current_user %>
           <li class="nav-item mt-3 list-unstyled">
-            <%= button_to "logout", destroy_user_session_path , method: :delete, class: "btn btn-outline-secondary"  %>
+            <%= button_to "sign out", destroy_user_session_path , method: :delete, class: "btn btn-outline-secondary"  %>
           </li>
         <% end %>
       </ul>
