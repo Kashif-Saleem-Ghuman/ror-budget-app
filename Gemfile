@@ -5,7 +5,7 @@ ruby '3.2.1'
 
 gem 'devise'
 
-gem "letter_opener", group: :development
+gem 'letter_opener'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
