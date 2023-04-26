@@ -22,6 +22,19 @@
       background-color: #3778c2;
       list-style: none;
       padding: 5px;
+
+      .add-category {
+        text-decoration: none;
+        background-color: #5fb523;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 5px;
+        margin-top: 1vw;
+        font-size: 2.5vw;
+        font-weight: 500;
+      }
     }
 
     .log {
@@ -36,6 +49,13 @@
       filter: invert(100%);
       width: 30px;
       height: 30px;
+    }
+
+    .name-group {
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      font-weight: 500;
     }
   }
 }
@@ -59,4 +79,28 @@
   filter: invert(100%);
   width: 30px;
   height: 30px;
+}
+
+.add-category {
+  text-decoration: none;
+  background-color: #5fb523;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 1vw;
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+.name-group {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.purchase-style {
+  font-size: 2.5vw;
 }
