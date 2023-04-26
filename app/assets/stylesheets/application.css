@@ -16,5 +16,35 @@
 @media screen and (min-width: 760px) {
   .logo {
     max-width: 40% !important;
+
+    .log-in {
+      width: 100%;
+      background-color: #3778c2;
+      list-style: none;
+      padding: 5px;
+    }
+
+    .log {
+      color: #fff !important;
+    }
+
+    .btn {
+      color: #fff;
+    }
   }
+}
+
+.log-in {
+  width: 100%;
+  background-color: #3778c2;
+  list-style: none;
+  padding: 5px;
+}
+
+.log {
+  color: #fff !important;
+}
+
+.btn {
+  color: #fff;
 }
