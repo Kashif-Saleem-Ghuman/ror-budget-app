@@ -5,10 +5,4 @@ class Group < ApplicationRecord
 
   has_one_attached :icon
   validates :name, :icon, presence: true
-
-  after_destroy :total_purchases_group_delete
-
-  def total_purchases_group_delete
-    group.decrement!(:total_purchases, purchase.amount)
-  end
 end
