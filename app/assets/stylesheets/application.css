@@ -14,52 +14,86 @@
  *= require_self
  */
 @media screen and (min-width: 760px) {
+  *{
+    font-family: proxima-nova, sans-serif;
+  }
   .logo {
     max-width: 40% !important;
+  }
+
+ 
 
     .log-in {
       width: 100%;
       background-color: #3778c2;
       list-style: none;
       padding: 5px;
-
-      .add-category {
-        text-decoration: none;
-        background-color: #5fb523;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        padding: 10px 10px;
-        border-radius: 5px;
-        margin-top: 1vw;
-        font-size: 2.5vw;
-        font-weight: 500;
-      }
     }
 
-    .log {
-      color: #fff !important;
-    }
+  .add-category {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-weight: 500;
+  }
+    
 
-    .white {
-      color: #fff;
-    }
+  .headers {
+    color: #fff !important;
+    font-size: 4vw !important;
+  }
 
-    .icon {
-      filter: invert(100%);
-      width: 30px;
-      height: 30px;
-    }
+  .white {
+    color: #fff;
+  }
 
-    .name-group {
-      text-decoration: none;
-      color: #434b54;
-      font-size: 2vw;
-      font-weight: 500;
-    }
+  .icon {
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+  }
+
+  .name-group-header {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 2.5vw;
+    font-weight: 700;
+  }
+
+  .name-group {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  .img {
+    width: 4vw;
+  }
+
+  .cont {
+    background-color: #f1f3f2;
+  }
+
+  .card-custom {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 97%;
+    margin: auto auto;
+    padding: 0.5vw;
   }
 }
 
+@media screen and (max-width: 760px) {
+  *{
+    font-family: proxima-nova, sans-serif;
+  }
 .log-in {
   width: 100%;
   background-color: #3778c2;
@@ -67,8 +101,9 @@
   padding: 5px;
 }
 
-.log {
+.headers {
   color: #fff !important;
+  font-size: 6vw;
 }
 
 .white {
@@ -77,8 +112,8 @@
 
 .icon {
   filter: invert(100%);
-  width: 30px;
-  height: 30px;
+  width: 6.5vw;
+  height: 6.5vw;
 }
 
 .add-category {
@@ -90,7 +125,7 @@
   padding: 10px 10px;
   border-radius: 5px;
   margin-top: 1vw;
-  font-size: 2.5vw;
+  font-size: 5vw;
   font-weight: 500;
 }
 
@@ -103,4 +138,5 @@
 
 .purchase-style {
   font-size: 2.5vw;
+}
 }

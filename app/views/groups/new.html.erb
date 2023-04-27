@@ -1,7 +1,7 @@
 <section>
  <div class="log-in d-flex justify-content-between align-items-center">
                <%= render partial: "shared/arrow_icon"%>
-                <li class="log"> <h2> ADD CATEGORY</h2></li>
+                <li class="log"> <h2 class= "headers"> ADD CATEGORY</h2></li>
               <%= image_tag "magnifying-glass-solid.svg", class: "icon"  %>
 </div>
 <%= form_with model: @group do |f| %>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Add category", class: "add-category" %>
+    <%= f.submit "Add", class: "add-category" %>
   </div>
 
 <% end %>
