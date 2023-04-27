@@ -1,0 +1,32 @@
+<section class="d-flex flex-column cont my-2">
+  <div class="log-in d-flex justify-content-between align-items-center">
+                <%= render partial: "shared/arrow_icon"%>
+                  <li class="headers"> <h2 class = "headers"> PURCHASES</h2></li>
+                <%= image_tag "magnifying-glass-solid.svg", class: "icon"  %>
+                  
+  </div>
+
+ <div class="groups d-flex justify-content-between card-custom-header p-3">
+  <% if @group.icon.attached? %>
+   <div class="img-div">
+    <img class="img" src="<%= url_for(@group.icon) %>">
+    </div>
+  <% end %>
+  <p class="name-group-header"> <%= @group.name.capitalize %></p>
+  <span class="name-group-header">Total amount: $<%= @group.total_purchases %> </span>
+</div>
+
+
+<div class = "container ">
+  <% @group_purchases.each do |group_purchase| %>
+  <div class="groups d-flex justify-content-between card-custom my-3">
+    <p class="name-group"> <%= group_purchase.purchase.name.capitalize %></p>
+  <span class="name-group"> $<%= group_purchase.purchase.amount %></span>
+  </div>
+  <% end %>
+</div>
+
+
+<%= link_to 'Add new Purchase', "/groups/#{@group.id}/purchases/new", class:"add-category"  %>
+
+</section>
