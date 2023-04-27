@@ -40,13 +40,13 @@
     padding: 5px 5px;
     border-radius: 5px;
     margin-top: 1vw;
-    font-size: 3vw;
+    font-size: 1.5vw;
     font-weight: 500;
   }
 
   .headers {
     color: #fff !important;
-    font-size: 3.5vw !important;
+    font-size: 2vw !important;
     margin: 0;
   }
 
@@ -56,14 +56,14 @@
 
   .icon {
     filter: invert(100%);
-    width: 30px;
-    height: 30px;
+    width: 1.75vw;
+    height: 1.75vw;
   }
 
   .name-group-header {
     text-decoration: none;
     color: #434b54;
-    font-size: 2.5vw;
+    font-size: 1.75vw;
     font-weight: 700;
     margin: 0;
   }
@@ -71,7 +71,7 @@
   .name-group {
     text-decoration: none;
     color: #434b54;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 500;
     margin: 0;
   }

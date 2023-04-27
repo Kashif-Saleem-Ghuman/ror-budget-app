@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
     @group = current_user.groups.new(group_params)
 
     if @group.save
-      redirect_to root_path, notice: 'Your category is created successfully 🎉'
+      redirect_to root_path, notice: 'Your category is created successfully'
     else
       flash[:alert] = 'Something went wrong, Try again!'
       render :new
