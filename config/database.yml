@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: budgetApp
-  username: postgres
-  password: <%= ENV["ROR_BUDGET_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
