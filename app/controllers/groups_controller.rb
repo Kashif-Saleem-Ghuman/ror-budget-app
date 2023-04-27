@@ -20,7 +20,6 @@ class GroupsController < ApplicationController
     end
   end
 
-
   def destroy
     @group = Group.find(params[:id])
     authorize! :destroy, @group
