@@ -6,6 +6,7 @@
   </div>
   
   <% @groups.each do |group| %>
+    <%= link_to " /groups/#{group.id}/purchases", class: "text-decoration-none" do %>
     <div class="card-custom my-2 p-2">
       <div class="card-body">
         <div class="d-flex align-items-center">
@@ -32,6 +33,7 @@
         </div>
       </div>
     </div>
+  <% end %>
   <% end %>
   
   
