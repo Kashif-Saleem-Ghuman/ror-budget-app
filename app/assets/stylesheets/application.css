@@ -14,21 +14,24 @@
  *= require_self
  */
 @media screen and (min-width: 760px) {
-  *{
+  * {
     font-family: proxima-nova, sans-serif;
+    margin: 0;
+    padding: 0;
   }
+
   .logo {
     max-width: 40% !important;
   }
 
- 
 
-    .log-in {
-      width: 100%;
-      background-color: #3778c2;
-      list-style: none;
-      padding: 5px;
-    }
+
+  .log-in {
+    width: 100%;
+    background-color: #3778c2;
+    list-style: none;
+    padding: 5px;
+  }
 
   .add-category {
     text-decoration: none;
@@ -42,11 +45,12 @@
     font-size: 3vw;
     font-weight: 500;
   }
-    
+
 
   .headers {
     color: #fff !important;
-    font-size: 4vw !important;
+    font-size: 3.5vw !important;
+    margin: 0;
   }
 
   .white {
@@ -64,6 +68,7 @@
     color: #434b54;
     font-size: 2.5vw;
     font-weight: 700;
+    margin: 0;
   }
 
   .name-group {
@@ -71,6 +76,7 @@
     color: #434b54;
     font-size: 2vw;
     font-weight: 500;
+    margin: 0;
   }
 
   .img {
@@ -88,55 +94,91 @@
     margin: auto auto;
     padding: 0.5vw;
   }
+
+  .card-custom-header {
+    background-color: #fff;
+  }
 }
 
 @media screen and (max-width: 760px) {
-  *{
+  * {
     font-family: proxima-nova, sans-serif;
   }
-.log-in {
-  width: 100%;
-  background-color: #3778c2;
-  list-style: none;
-  padding: 5px;
-}
 
-.headers {
-  color: #fff !important;
-  font-size: 6vw;
-}
+  .cont {
+    background-color: #f1f3f2;
+  }
 
-.white {
-  color: #fff;
-}
+  .card-custom-header {
+    background-color: #fff;
+  }
 
-.icon {
-  filter: invert(100%);
-  width: 6.5vw;
-  height: 6.5vw;
-}
+  .card-custom {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 99%;
+    margin: auto auto;
+    padding: 0.5vw;
+  }
 
-.add-category {
-  text-decoration: none;
-  background-color: #5fb523;
-  color: #fff;
-  width: 100%;
-  text-align: center;
-  padding: 10px 10px;
-  border-radius: 5px;
-  margin-top: 1vw;
-  font-size: 5vw;
-  font-weight: 500;
-}
+  .img {
+    width: 5vw;
+  }
 
-.name-group {
-  text-decoration: none;
-  color: #434b54;
-  font-size: 2vw;
-  font-weight: 500;
-}
+  .log-in {
+    width: 100%;
+    background-color: #3778c2;
+    list-style: none;
+    padding: 5px;
+  }
 
-.purchase-style {
-  font-size: 2.5vw;
-}
+  .headers {
+    color: #fff !important;
+    font-size: 5vw;
+    margin: 0;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .icon {
+    filter: invert(100%);
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .add-category {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.5vw 0.5vw;
+    border-radius: 5px;
+    margin-top: 1vw;
+    font-size: 5vw;
+    font-weight: 500;
+  }
+
+  .name-group {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 4vw;
+    font-weight: 500;
+    margin: 0;
+    padding: 1vw;
+  }
+
+  .name-group-header {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 4vw;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .purchase-style {
+    font-size: 2.5vw;
+  }
 }
