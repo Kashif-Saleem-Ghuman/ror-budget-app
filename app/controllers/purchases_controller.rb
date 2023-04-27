@@ -17,7 +17,7 @@ class PurchasesController < ApplicationController
     if @purchase.save
       @group_purchase = GroupPurchase.new(group_id: params[:groups], purchase_id: @purchase.id)
       @group_purchase.save
-      redirect_to group_purchases_path(group_id: params[:groups]), notice: 'Your Transaction is created successfully 🎉'
+      redirect_to group_purchases_path(group_id: params[:groups]), notice: 'Your Transaction is created successfully'
     else
       flash[:alert] = 'Something went wrong, Try again!'
       render :new

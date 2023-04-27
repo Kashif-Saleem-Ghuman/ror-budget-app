@@ -4,8 +4,8 @@ Rails.application.routes.draw do
     root to: 'groups#index', as: :authenticated_root
   end
 
-  resources :groups, only: [:index, :new, :create] do
-    resources :purchases, only: [:index, :new, :create]
+  resources :groups, only: [:index, :new, :create, :destroy] do
+    resources :purchases, only: [:index, :new, :create, :destroy]
  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
