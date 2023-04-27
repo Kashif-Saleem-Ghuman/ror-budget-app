@@ -7,4 +7,13 @@ class User < ApplicationRecord
   has_many :purchases, foreign_key: :author_id
 
   validates :name, :email, :password, presence: true
+
+  after_create :set_role
+  after_save :set_role
+
+  private
+
+  def set_role
+    update(role: 'user') unless role.present?
+  end
 end

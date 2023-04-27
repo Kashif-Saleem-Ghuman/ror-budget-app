@@ -5,21 +5,40 @@
     <%= image_tag "magnifying-glass-solid.svg", class: "icon"  %>                 
   </div>
   
- 
-    <% @groups.each do |group| %>
-      <%= link_to " /groups/#{group.id}/purchases" do %>
-      <div class="card-custom d-flex justify-content-between my-2">
-        <% if group.icon.attached? %>
-          <div class="d-flex align-items-center gap-3">
-            <img class="img" src="<%= url_for(group.icon) %>">
-            <p class="name-group-header"> <%= group.name %></p>
+  <% @groups.each do |group| %>
+    <div class="card-custom my-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center">
+          <% if group.icon.attached? %>
+            <div>
+              <%= image_tag url_for(group.icon), class: "img" %>
+            </div>
+          <% end %>
+          <div class="d-flex flex-column ms-3">
+            <div class="d-flex justify-content-between align-items-center w-100 gap-2">
+              <span class="name-group-header"><%= group.name %></span>
+              <span class="name-group text-center"><%= "Total amount: $#{group.total_purchases}" %></span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center w-100">
+
+            </div>
+
           </div>
-        <% end %>
-        <span class="name-group" > Total amount: $<%= group.total_purchases %> </span>
+          <div class="ms-auto">
+            <% if can? :destroy, group %>
+              <%= button_to "Delete", group_path(group.id), method: :delete, class: "btn btn-sm btn-danger" %>
+            <% end %>
+          </div>
+        </div>
       </div>
-      <% end %>
-    <% end %>
-
-
-   <%= link_to 'Add new Category', new_group_path, class:"add-category"  %>
+    </div>
+  <% end %>
+  
+  
+  
+  
+  
+  
+  
+  <%= link_to 'Add new Category', new_group_path, class:"add-category"  %>
 </section>
