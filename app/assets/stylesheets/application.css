@@ -104,6 +104,11 @@
   .card-custom-header {
     background-color: #fff;
   }
+
+  .padding {
+    padding: 2vw 26vw;
+    border-radius: 0 !important;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -193,5 +198,10 @@
 
   .purchase-style {
     font-size: 2.5vw;
+  }
+
+  .padding {
+    padding: 2vw 26vw;
+    border-radius: 0 !important;
   }
 }
