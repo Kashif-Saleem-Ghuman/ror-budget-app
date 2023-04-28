@@ -16,9 +16,6 @@ RSpec.describe 'groups/new', type: :feature do
   end
 
   it 'clicks on back' do
-    # find("a[href='/']").click
-    # sleep 1
-    # expect(current_path).to eql new_user_session_path
     find("a[href='/']").click
     sleep 1
     expect(current_path).to eql root_path
