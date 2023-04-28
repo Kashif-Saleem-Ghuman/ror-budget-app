@@ -204,6 +204,12 @@
     font-size: 5vw;
   }
 
+.padding-add-button {
+    padding: 2vw 40vw;
+    border-radius: 0 !important;
+    font-size: 5vw;
+  }
+
   .date-style {
     text-decoration: none;
     color: #434b54;
