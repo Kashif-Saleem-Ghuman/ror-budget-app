@@ -1,9 +1,15 @@
 <section>
  <div class="log-in d-flex justify-content-between align-items-center">
-               <%= render partial: "shared/arrow_icon"%>
+              <%= link_to group_purchases_path do %>
+                <%= image_tag "arrow-left-solid.svg", class: "icon"  %>
+                <% end %>
                 <li class="log"> <h2 class="headers"> ADD PURCHASE</h2></li>
-              <%= image_tag "magnifying-glass-solid.svg", class: "icon"  %>
+                <%= button_to destroy_user_session_path, method: :delete, class:"btn" do %>   
+                  <%= image_tag "arrow-right-from-bracket-solid.svg", class:"icon" %>
+                <% end %>
 </div>
+
+<div class="container">
 <%= form_with url: group_purchases_path, method: :post do |f| %>
 
    <div class="field">
@@ -21,9 +27,10 @@
     <%= f.select :groups, options_from_collection_for_select(@available_groups, 'id', 'name'), {}, { class: "form-control" }%>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Add Purchase", class: "add-category" %>
+  <div class="actions add-category-end">
+    <%= f.submit "Add Purchase", class:"btn btn-outline-light padding-purchase" %>
   </div>
 
 <% end %>
+</div>
 </section>
