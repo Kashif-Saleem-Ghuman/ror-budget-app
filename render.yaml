@@ -1,0 +1,18 @@
+databases:
+  - name: budgetApp
+    databaseName: budgetapp_d0fy
+    user: budgetapp_d0fy_user
+
+services:
+  - type: web
+    name: paypros
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: budgetApp
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false

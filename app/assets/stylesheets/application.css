@@ -1,0 +1,277 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@media screen and (min-width: 760px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: whitesmoke;
+  }
+
+  .logo {
+    max-width: 40% !important;
+  }
+
+  .log-in {
+    width: 100%;
+    background-color: #3778c2;
+    list-style: none;
+    padding: 5px;
+  }
+
+  .add-category {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    margin-top: auto;
+  }
+
+  .add-category-end {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1vw 2vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headers {
+    color: #fff !important;
+    font-size: 2vw !important;
+    margin: 0;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .icon {
+    filter: invert(100%);
+    width: 1.75vw;
+    height: 1.75vw;
+  }
+
+  .name-group-header {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 1.75vw;
+    font-weight: lighter;
+    margin: 0;
+    opacity: 80%;
+  }
+
+  .name-group {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 1vw;
+  }
+
+  .img {
+    width: 4vw;
+  }
+
+  .cont {
+    background-color: #f1f3f2;
+  }
+
+  .card-custom {
+    background-color: #fff;
+    width: 100%;
+    margin: auto auto;
+    padding: 1vw;
+  }
+
+  .card-custom-header {
+    background-color: #fff;
+  }
+
+  .padding {
+    padding: 2vw 26vw;
+    border-radius: 0 !important;
+  }
+
+  .padding-add-button {
+    border-radius: 0 !important;
+    font-size: 3vw;
+  }
+
+  .padding-purchase {
+    padding: 1vw 25vw;
+    border-radius: 0 !important;
+    font-size: 2vw;
+  }
+
+  .date-style {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 0;
+    opacity: 80%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: whitesmoke;
+  }
+
+  .cont {
+    background-color: #f1f3f2;
+  }
+
+  .card-custom-header {
+    background-color: #fff;
+  }
+
+  .card-custom {
+    background-color: #fff;
+    width: 100%;
+    margin: auto auto;
+    padding: 2vw;
+  }
+
+  .img {
+    width: 15vw;
+  }
+
+  .log-in {
+    width: 100%;
+    background-color: #3778c2;
+    list-style: none;
+    padding: 5vw 2vw;
+  }
+
+  .headers {
+    color: #fff !important;
+    font-size: 5vw;
+    margin: 0;
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .icon {
+    filter: invert(100%);
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .add-category {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 6vw 6vw;
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .add-category-end {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 6vw 6vw;
+    margin-top: 1vw;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .name-group {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 6vw;
+    font-weight: bold;
+    margin: 0;
+    padding: 1vw;
+  }
+
+  .name-group-header {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 6vw;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 0;
+    opacity: 80%;
+  }
+
+  .purchase-style {
+    font-size: 2.5vw;
+  }
+
+  .padding {
+    padding: 2vw 23vw;
+    border-radius: 0 !important;
+    font-size: 5vw;
+  }
+
+  .padding-purchase {
+    padding: 2vw 22vw;
+    border-radius: 0 !important;
+    font-size: 5vw;
+  }
+
+  .padding-add-button {
+    padding: 2vw 40vw;
+    border-radius: 0 !important;
+    font-size: 5vw;
+  }
+
+  .date-style {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 4vw;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 0;
+    opacity: 80%;
+  }
+}
