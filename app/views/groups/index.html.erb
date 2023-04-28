@@ -8,21 +8,23 @@
   <% @groups.each do |group| %>
     <%= link_to " /groups/#{group.id}/purchases", class: "text-decoration-none" do %>
     <div class="card-custom my-2 py-3 px-2">
-      <div class="card-body">
+      <div class="card-body d-flex">
         <div class="d-flex align-items-center">
           <% if group.icon.attached? %>
             <div class="d-flex gap-2">
               <%= image_tag url_for(group.icon), class: "img" %>
-              <span class="name-group-header"><%= group.name %></span>
             </div>
           <% end %>
-          <div class="d-flex w-100 justify-content-end">
-              <span class="name-group text-center"><%= "$#{group.total_purchases}" %></span>
-           </div>
+          <div class="ms-3">
+            <span class="name-group-header"><%= group.name %></span>
+            <div class="date-style "><%= group.created_at.strftime("%d %b %Y") %></div>
+          </div>
+       
           
 
           </div>
-          <div class="d-flex justify-content-end">
+          <div class="d-flex flex-column ms-auto">
+          <span class="name-group text-center"><%= "$#{group.total_purchases}" %></span>
             <% if can? :destroy, group %>
               <%= button_to "Delete", group_path(group.id), method: :delete, class: "btn btn-sm btn-outline-danger" %>
             <% end %>

@@ -137,7 +137,7 @@
   }
 
   .img {
-    width: 10vw;
+    width: 15vw;
   }
 
   .log-in {
@@ -188,10 +188,11 @@
   .name-group-header {
     text-decoration: none;
     color: #434b54;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: lighter;
     font-style: normal;
     margin: 0;
+    opacity: 80%;
   }
 
   .purchase-style {
@@ -201,5 +202,15 @@
   .padding {
     padding: 2vw 26vw;
     border-radius: 0 !important;
+  }
+
+  .date-style {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 4vw;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 0;
+    opacity: 80%;
   }
 }
