@@ -171,7 +171,6 @@
     text-align: center;
     padding: 6vw 6vw;
     margin-top: 1vw;
-    font-size: 5vw;
     font-weight: 500;
     margin-top: auto;
   }
@@ -200,8 +199,9 @@
   }
 
   .padding {
-    padding: 2vw 26vw;
+    padding: 2vw 23vw;
     border-radius: 0 !important;
+    font-size: 5vw;
   }
 
   .date-style {
