@@ -137,7 +137,7 @@
   }
 
   .img {
-    width: 5vw;
+    width: 10vw;
   }
 
   .log-in {
@@ -179,7 +179,7 @@
   .name-group {
     text-decoration: none;
     color: #434b54;
-    font-size: 4.5vw;
+    font-size: 6vw;
     font-weight: bold;
     margin: 0;
     padding: 1vw;
@@ -188,7 +188,7 @@
   .name-group-header {
     text-decoration: none;
     color: #434b54;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: lighter;
     font-style: normal;
     margin: 0;
