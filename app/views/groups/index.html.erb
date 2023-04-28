@@ -8,6 +8,7 @@
       <%= image_tag "arrow-right-from-bracket-solid.svg", class:"icon" %>
     <% end %>
   </div>
+  <%= render partial: "shared/flash"%>
 
   <% @groups.each do |group| %>
     <%= link_to "/groups/#{group.id}/purchases", class: "text-decoration-none" do %>
