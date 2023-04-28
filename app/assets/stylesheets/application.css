@@ -175,6 +175,21 @@
     margin-top: auto;
   }
 
+  .add-category-end {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 6vw 6vw;
+    margin-top: 1vw;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   .name-group {
     text-decoration: none;
     color: #434b54;
