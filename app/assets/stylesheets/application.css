@@ -46,11 +46,24 @@
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 5px 5px;
+    padding: 1vw;
     border-radius: 5px;
     margin-top: 1vw;
     font-size: 1.5vw;
-    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .add-category-end {
+    text-decoration: none;
+    background-color: #5fb523;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 1vw 2vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .headers {
@@ -75,14 +88,16 @@
     font-size: 1.75vw;
     font-weight: lighter;
     margin: 0;
+    opacity: 80%;
   }
 
   .name-group {
     text-decoration: none;
     color: #434b54;
-    font-size: 1.5vw;
-    font-weight: 500;
+    font-size: 2vw;
+    font-weight: bold;
     margin: 0;
+    padding: 1vw;
   }
 
   .img {
@@ -95,9 +110,9 @@
 
   .card-custom {
     background-color: #fff;
-    width: 90%;
+    width: 100%;
     margin: auto auto;
-    padding: 0.5vw;
+    padding: 1vw;
   }
 
   .card-custom-header {
@@ -107,6 +122,27 @@
   .padding {
     padding: 2vw 26vw;
     border-radius: 0 !important;
+  }
+
+  .padding-add-button {
+    border-radius: 0 !important;
+    font-size: 3vw;
+  }
+
+  .padding-purchase {
+    padding: 1vw 25vw;
+    border-radius: 0 !important;
+    font-size: 2vw;
+  }
+
+  .date-style {
+    text-decoration: none;
+    color: #434b54;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 0;
+    opacity: 80%;
   }
 }
 
@@ -131,9 +167,9 @@
 
   .card-custom {
     background-color: #fff;
-    width: 95%;
+    width: 100%;
     margin: auto auto;
-    padding: 0.5vw;
+    padding: 2vw;
   }
 
   .img {
@@ -219,7 +255,13 @@
     font-size: 5vw;
   }
 
-.padding-add-button {
+  .padding-purchase {
+    padding: 2vw 22vw;
+    border-radius: 0 !important;
+    font-size: 5vw;
+  }
+
+  .padding-add-button {
     padding: 2vw 40vw;
     border-radius: 0 !important;
     font-size: 5vw;
