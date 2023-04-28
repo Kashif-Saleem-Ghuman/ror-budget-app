@@ -7,7 +7,7 @@
   
   <% @groups.each do |group| %>
     <%= link_to " /groups/#{group.id}/purchases", class: "text-decoration-none" do %>
-    <div class="card-custom my-2 p-2">
+    <div class="card-custom my-2 p-4">
       <div class="card-body">
         <div class="d-flex align-items-center">
           <% if group.icon.attached? %>
@@ -40,7 +40,8 @@
   
   
   
-  
-  
-  <%= link_to 'Add new Category', new_group_path, class:"add-category"  %>
 </section>
+  
+<div class = "add-category ">
+<%= link_to 'Add new Category', new_group_path, class:"btn btn-outline-light px-5"  %>
+</div>

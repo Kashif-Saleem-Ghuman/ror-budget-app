@@ -15,9 +15,18 @@
  */
 @media screen and (min-width: 760px) {
   * {
-    font-family: proxima-nova, sans-serif;
     margin: 0;
     padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: whitesmoke;
   }
 
   .logo {
@@ -87,7 +96,7 @@
   .card-custom {
     background-color: #fff;
     border-radius: 5px;
-    width: 97%;
+    width: 90%;
     margin: auto auto;
     padding: 0.5vw;
   }
@@ -98,8 +107,14 @@
 }
 
 @media screen and (max-width: 760px) {
-  * {
-    font-family: proxima-nova, sans-serif;
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: whitesmoke;
   }
 
   .cont {
@@ -113,9 +128,10 @@
   .card-custom {
     background-color: #fff;
     border-radius: 5px;
-    width: 99%;
+    width: 90%;
     margin: auto auto;
     padding: 0.5vw;
+
   }
 
   .img {
@@ -151,11 +167,11 @@
     color: #fff;
     width: 100%;
     text-align: center;
-    padding: 0.5vw 0.5vw;
-    border-radius: 5px;
+    padding: 6vw 6vw;
     margin-top: 1vw;
     font-size: 5vw;
     font-weight: 500;
+    margin-top: auto;
   }
 
   .name-group {
