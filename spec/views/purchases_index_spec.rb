@@ -15,4 +15,14 @@ RSpec.describe 'purchases/index', type: :feature do
   it 'renders new purchase page' do
     expect(page).to have_content 'PURCHASES'
   end
+
+  it 'has a link to add new purchase' do
+    expect(page).to have_content 'Add new Purchase'
+  end
+
+  it 'clicks on back' do
+    find("a[href='/']").click
+    sleep 1
+    expect(current_path).to eql root_path
+  end
 end
