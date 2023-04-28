@@ -73,7 +73,7 @@
     text-decoration: none;
     color: #434b54;
     font-size: 1.75vw;
-    font-weight: 700;
+    font-weight: lighter;
     margin: 0;
   }
 
@@ -95,7 +95,6 @@
 
   .card-custom {
     background-color: #fff;
-    border-radius: 5px;
     width: 90%;
     margin: auto auto;
     padding: 0.5vw;
@@ -132,11 +131,9 @@
 
   .card-custom {
     background-color: #fff;
-    border-radius: 5px;
-    width: 90%;
+    width: 95%;
     margin: auto auto;
     padding: 0.5vw;
-
   }
 
   .img {
@@ -147,7 +144,7 @@
     width: 100%;
     background-color: #3778c2;
     list-style: none;
-    padding: 5px;
+    padding: 5vw 2vw;
   }
 
   .headers {
@@ -182,8 +179,8 @@
   .name-group {
     text-decoration: none;
     color: #434b54;
-    font-size: 4vw;
-    font-weight: 500;
+    font-size: 4.5vw;
+    font-weight: bold;
     margin: 0;
     padding: 1vw;
   }
@@ -192,7 +189,8 @@
     text-decoration: none;
     color: #434b54;
     font-size: 4vw;
-    font-weight: 700;
+    font-weight: lighter;
+    font-style: normal;
     margin: 0;
   }
 
